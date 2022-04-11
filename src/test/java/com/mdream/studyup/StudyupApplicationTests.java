@@ -18,6 +18,9 @@ class StudyupApplicationTests {
 	@Autowired
 	private AccountMapper accountMapper;
 
+	//Mybatis-Plus介绍
+	// https://blog.csdn.net/CodeInCoke/article/details/121030290
+
 	@Test
 	public void testSelect() {
 		System.out.println(("----- selectAll method test ------"));

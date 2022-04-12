@@ -3,6 +3,7 @@ package com.mdream.studyup.dao;
 
 import com.mdream.studyup.domain.Account;
 import com.mdream.studyup.mapper.AccountMapper;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
@@ -11,6 +12,7 @@ import javax.annotation.Resource;
  * @Description:
  * @date 2022/4/11 0011 21:05
  */
+@Component
 public class AccountDao {
 
     @Resource

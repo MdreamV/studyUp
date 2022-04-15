@@ -2,6 +2,7 @@ package com.mdream.studyup.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.google.gson.annotations.SerializedName;
 
 import java.sql.Timestamp;
 
@@ -18,6 +19,7 @@ public class Account {
 
     private String name;
 
+    @SerializedName("nick_name")
     private String nickName;
 
     private String password;
@@ -26,7 +28,7 @@ public class Account {
 
     private Timestamp createTime;
 
-    private Timestamp updateTime;
+    private Timestamp updataTime;
 
     public Account() {
     }
@@ -87,12 +89,12 @@ public class Account {
         this.createTime = createTime;
     }
 
-    public Timestamp getUpdateTime() {
-        return updateTime;
+    public Timestamp getUpdataTime() {
+        return updataTime;
     }
 
-    public void setUpdateTime(Timestamp updateTime) {
-        this.updateTime = updateTime;
+    public void setUpdataTime(Timestamp updataTime) {
+        this.updataTime = updataTime;
     }
 
     @Override
@@ -104,7 +106,7 @@ public class Account {
                 ", password='" + password + '\'' +
                 ", pin='" + pin + '\'' +
                 ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
+                ", updateTime=" + updataTime +
                 '}';
     }
 }

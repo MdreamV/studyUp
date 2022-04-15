@@ -7,10 +7,10 @@ package com.mdream.studyup.util;
  */
 public class ResultUtil<T> {
 
-    public static final Integer SUCCESS_CODE = 200;
-    public static final Integer FAIL_CODE = 10000;
-    public static final String SUCCESS_MESSAGE = "success";
-    public static final String FAIL_MESSAGE = "fail";
+    public static final Integer SUCCESS_CODE = ControllerResultCode.SUCCESS.getCode();
+    public static final Integer FAIL_CODE = ControllerResultCode.FAIL.getCode();
+    public static final String SUCCESS_MESSAGE = ControllerResultCode.SUCCESS.getMessage();
+    public static final String FAIL_MESSAGE = ControllerResultCode.FAIL.getMessage();
     /**
      * 返回状态码
      */

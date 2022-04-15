@@ -10,5 +10,9 @@ import com.mdream.studyup.domain.Account;
 
 public interface AccountService {
 
-    Integer regist(Account account);
+    Account regist(Account account, String invitationCode);
+
+    boolean nameIsUsed(String name);
+
+    boolean nickNameIsUsed(String nickName);
 }
